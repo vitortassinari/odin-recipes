@@ -1,0 +1,55 @@
+/* General styles for all pages */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height:1.5;
+}
+
+
+/* Styles specific to the homepage */
+
+.homepage{
+
+
+.container {
+    max-width: 450px;
+    margin: 150px auto;
+    padding: 40px 0 40px;
+    border: 2px solid darkred;
+    background-color: #FFFAFA;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px darkgray;
+    text-align: center;  
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 920;     
+}
+
+img {
+    width: 200px;
+    padding: 30px
+}
+
+
+p {
+    margin: auto 100px;
+    font-style: italic;
+}
+
+.recipes-list {
+    width: 150px;
+    margin: auto 120px;
+    padding: 20px 50px 10px;
+    list-style-type: circle;
+    text-align: left;
+    line-height: 1.2;    
+}
+
+.recipes-list a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: 500;
+}
+
+}
