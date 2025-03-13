@@ -4,6 +4,18 @@ body {
     line-height:1.5;
 }
 
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 920;     
+}
+
+a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: 500;
+}
 
 /* Styles specific to the homepage */
 
@@ -19,11 +31,6 @@ body {
     border-radius: 10px;
     box-shadow: 5px 5px 10px darkgray;
     text-align: center;  
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 920;     
 }
 
 img {
@@ -46,10 +53,70 @@ p {
     line-height: 1.2;    
 }
 
-.recipes-list a {
-    text-decoration: none;
-    color: darkred;
-    font-weight: 500;
 }
+
+/* Styles specific to the recipes page */
+
+.recipe-page {
+
+    .recipe-container {
+        max-width: 500px;
+        max-height: 600px;
+        margin: 80px auto;
+        padding: 40px 0 40px;
+        border: 2px solid darkred;
+        background-color: #FFFAFA;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px darkgray;
+        text-align: center; 
+        overflow-y: auto; 
+    }
+
+    .recipe-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    img {
+        max-width: 450px;
+        line-height: 0;
+        vertical-align:bottom;
+    }
+
+    .recipe-description {
+        padding: 0 25px 0;
+        text-align: justify;
+    }
+
+    .caption {
+        margin: 0;
+        text-align:center;
+    }
+
+    .homepage-link {
+        position: absolute;
+        top: 40px;
+        padding-left: 25px;
+        font-size: small;      
+    }
+
+    .ingredients-list {
+        width: 250px;
+        margin: auto 130px;
+        padding: 0px 0px 0px;
+        list-style-type: circle;
+        text-align: left;
+        line-height: 1.2;     
+    }
+    
+    .steps-list {
+        text-align: left;
+        line-height: 1.2;   
+        padding: 25px;
+        display: grid;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 10px;
+        text-align: justify;          
+    }
 
 }
