@@ -47,8 +47,7 @@ a {
 
 /* Styles specific to the homepage */
 
-.homepage{
-
+.homepage {
 
 .container {
     width: 430px;
@@ -64,7 +63,7 @@ a {
 
 img {
     width: 200px;
-    margin: 35px auto;    
+    margin: 30px auto;    
 }
 
 
@@ -74,46 +73,42 @@ img {
     font-style: italic;
 }
 
-.recipeslist {
-    text-align: center;
-    margin: 20px auto;
-        
+.recipeslist-container {
+    display: flex;
+    justify-content: center; 
 }
 
-.recipeslist,
-p {
-    margin-bottom: 25px;
-    padding: 15px 0;
+.recipeslist {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;            
+    margin-top: 35px;
+}
+
+.recipes-item {
+    border: 1px solid #fff;
+    color: white;
+    font-weight: bold;
+    width: 90px;
+    height: 100px;
+    padding: 10px;
 }
 
 .recipe1 {
-    display: inline-block;
     background-color: salmon;
-    color: white;
-    width: 80px;
-    height: 100px;
-    box-shadow: 2px 2px 2px darkgray;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-weight: bold;           
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .recipe1:hover {
     background: linear-gradient(to bottom, salmon, orangered); 
-    
 }
 
 .recipe2 {
-    display: inline-block;
     background-color: chocolate;
-    color: white;
-    width: 80px;
-    height: 100px;
-    text-align: center;
-    box-shadow: 2px 2px 2px darkgray;
-    border-radius: 5px;
-    margin-right: 10px;   
-    font-weight: bold;
+    border-right: none;
 }
 
 .recipe2:hover {
@@ -121,15 +116,9 @@ p {
 }
 
 .recipe3 {
-    display: inline-block;
     background-color: goldenrod;
-    color: white;
-    width: 80px;
-    height: 100px;
-    text-align: center; 
-    box-shadow: 2px 2px 2px darkgray;  
-    border-radius: 5px;
-    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .recipe3:hover {
